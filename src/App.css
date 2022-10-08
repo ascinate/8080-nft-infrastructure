@@ -1,38 +1,456 @@
-.App {
-  text-align: center;
+@charset "utf-8";
+/* CSS Document */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@font-face {
+  font-family: 'FuturaBoldfont';
+  src: url('./fonts/FuturaBoldfont.eot');
+  src: url('./fonts/FuturaBoldfont.eot') format('embedded-opentype'),
+       url('./fonts/FuturaBoldfont.woff2') format('woff2'),
+       url('./fonts/FuturaBoldfont.woff') format('woff'),
+       url('./fonts/FuturaBoldfont.ttf') format('truetype'),
+       url('./fonts/FuturaBoldfont.svg#FuturaBoldfont') format('svg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'futuramediumbt';
+  src: url('./fonts/futuramediumbt.eot');
+  src: url('./fonts/futuramediumbt.eot') format('embedded-opentype'),
+       url('./fonts/futuramediumbt.woff2') format('woff2'),
+       url('./fonts/futuramediumbt.woff') format('woff'),
+       url('./fonts/futuramediumbt.ttf') format('truetype'),
+       url('./fonts/futuramediumbt.svg#futuramediumbt') format('svg');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+  font-family: 'PuntaExtrabold';
+  src: url('./fonts/PuntaExtrabold.eot');
+  src: url('./fonts/PuntaExtrabold.eot') format('embedded-opentype'),
+       url('./fonts/PuntaExtrabold.woff2') format('woff2'),
+       url('./fonts/PuntaExtrabold.woff') format('woff'),
+       url('./fonts/PuntaExtrabold.ttf') format('truetype'),
+       url('./fonts/PuntaExtrabold.svg#PuntaExtrabold') format('svg');
+}
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('./fonts/FuturaMedium.eot');
+  src: url('./fonts/FuturaMedium.eot') format('embedded-opentype'),
+       url('./fonts/FuturaMedium.woff2') format('woff2'),
+       url('./fonts/FuturaMedium.woff') format('woff'),
+       url('./fonts/FuturaMedium.ttf') format('truetype'),
+       url('./fonts/FuturaMedium.svg#FuturaMedium') format('svg');
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url('./fonts/FuturaBold.eot');
+  src: url('./fonts/FuturaBold.eot') format('embedded-opentype'),
+       url('./fonts/FuturaBold.woff2') format('woff2'),
+       url('./fonts/FuturaBold.woff') format('woff'),
+       url('./fonts/FuturaBold.ttf') format('truetype'),
+       url('./fonts/FuturaBold.svg#FuturaBold') format('svg');
+}
+
+@font-face {
+  font-family: 'AvenirBlack';
+  src: url('./fonts/AvenirBlack.eot');
+  src: url('./fonts/AvenirBlack.eot') format('embedded-opentype'),
+       url('./fonts/AvenirBlack.woff2') format('woff2'),
+       url('./fonts/AvenirBlack.woff') format('woff'),
+       url('./fonts/AvenirBlack.ttf') format('truetype'),
+       url('./fonts/AvenirBlack.svg#AvenirBlack') format('svg');
+}
+
+@font-face {
+  font-family: 'futuramediumitalic';
+  src: url('./fonts/futuramediumitalic.eot');
+  src: url('./fonts/futuramediumitalic.eot') format('embedded-opentype'),
+       url('./fonts/futuramediumitalic.woff2') format('woff2'),
+       url('./fonts/futuramediumitalic.woff') format('woff'),
+       url('./fonts/futuramediumitalic.ttf') format('truetype'),
+       url('./fonts/futuramediumitalic.svg#futuramediumitalic') format('svg');
+}
+
+@font-face {
+  font-family: 'PuntaRegular';
+  src: url('./fonts/PuntaRegular.eot');
+  src: url('./fonts/PuntaRegular.eot') format('embedded-opentype'),
+       url('./fonts/PuntaRegular.woff2') format('woff2'),
+       url('./fonts/PuntaRegular.woff') format('woff'),
+       url('./fonts/PuntaRegular.ttf') format('truetype'),
+       url('./fonts/PuntaRegular.svg#PuntaRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'LEMONMILKRegular';
+  src: url('./fonts/LEMONMILKRegular.eot');
+  src: url('./fonts/LEMONMILKRegular.eot') format('embedded-opentype'),
+       url('./fonts/LEMONMILKRegular.woff2') format('woff2'),
+       url('./fonts/LEMONMILKRegular.woff') format('woff'),
+       url('./fonts/LEMONMILKRegular.ttf') format('truetype'),
+       url('./fonts/LEMONMILKRegular.svg#LEMONMILKRegular') format('svg');
+}
+
+
+:root {
+  --abutton-color:   linear-gradient(146deg, rgba(255,77,255,1) 34%, rgba(65,17,249,1) 74%) 0% 0% no-repeat padding-box;
+  --bbutton-color: linear-gradient(146deg, rgba(42,242,255,1) 30%, rgba(255,2,0,1) 71%);
+  --body-background:linear-gradient(184deg, rgba(12,0,55,1) 10%, rgba(55,0,55,1) 55%);
+  --font-head:#ee4130;
+  --font-body:#fff !important;
+  --counnect-link:#6D82CB !important;
+  --menu-link:#fff !important;
+  --line-color: linear-gradient(99deg, rgba(255,77,255,1) 37%, rgba(65,17,249,1) 80%);
+
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, ul, var {
+  border: 0;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: none !important;
+  padding: 0;
+  vertical-align: baseline;
+  font-family: 'Source Sans Pro', sans-serif;
   }
+  
+  body {
+  margin: 0;
+  padding: 0;
+  background:var(--body-background);
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:17px;
+  color:var(--font-body);
+  padding:10px 0 0 0;
+  }
+
+  a{
+    color:inherit;
+    outline: none !important;
+  }
+  a:hover{
+    color:inherit;
+    text-decoration:none;
+  }
+  button,
+  button:focus{
+    outline: none !important;
+  }
+  ol {
+    padding-left: 0;
+  }
+  ol li {
+    list-style: inherit;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li, ul {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+    max-width:100%;
+    border: none;
+    outline: none;
+  }
+  .btn:focus{
+    box-shadow: none !important;
+  }
+
+  .top-sec-bar .navbar .navbar-nav .nav-link{
+    font-family: 'AvenirBlack';
+    color: var(--menu-link);
+  }
+  .top-sec-bar .navbar .navbar-nav .nav-item .nav-link{
+    margin: 0 7px;
+  }
+  .login-btn{
+    font-family: 'AvenirBlack';
+    padding: 6px 70px !important;
+    border: solid 2px #fff;
+    color: var(--menu-link);
+    border-radius: 30px !important;
+    margin: 0 20px;
+    height: 46px;
+    align-items: center;
+    display: flex;
+
+  }
+  .contact-btn{
+    font-family: 'AvenirBlack';
+    padding: 6px 40px !important;
+    border: solid 2px #fff;
+    color: var(--menu-link);
+    border-radius: 30px !important;
+    margin: 0 20px;
+    height: 46px;
+    align-items: center;
+    display: flex;
+  }
+
+  .comon-buuton{
+    font-family: 'AvenirBlack';
+    padding: 6px 36px !important;
+    border: none !important;
+    color: var(--menu-link);
+    border-radius: 30px !important;
+    background: var(--abutton-color);
+    height: 46px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .comon-buuton img{
+    width: 24px;
+    margin-left: 12px;
+  }
+
+  .comon-buuton:hover,
+  .login-btn:hover,
+  .contact-btn:hover{
+    transition: all 0.5s;
+    color: var(--menu-link);
+  }
+
+  .comon-logo{
+    display: inline-block;
+    width: 90%;
+    margin: auto;
+  }
+  .multi-logo-div{
+    display: inline-block;
+    width: 100%;
+    border-top: solid 2px #4111F9;
+    border-bottom: solid 2px #4111F9;
+    margin-top: 100px;
+    padding: 25px 0;
+  }
+  .multi-logo-div .row > div:nth-child(3){
+     text-align: right !important;
+  }
+  .multi-logo-div .row > div:nth-child(1) figure img{
+    margin-left: -20px;
+  }
+  .multi-logo-div .row > div:nth-child(2) figure img{
+    margin-left: 20px;
+  }
+  .multi-logo-div .row > div:nth-child(3) figure img{
+    margin-left: 67px;
+  }
+  .multi-logo-div .row > div:first-child{
+    text-align: left !important;
+  }
+  .multi-logo-div .row > div:last-child{
+    text-align: right !important;
+  }
+ 
+/* banner */
+.banner{
+  padding-top: 70px;
+  position: relative;
+}
+.banner::before{
+  background-image: url(../public/images/Shape\ 1.png);
+  content: "";
+  left: 100px;
+  top: 52px;
+  width: 40%;
+  height: 90%;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 46%;
+  background-position: center 130px;
+  z-index: -1;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner::after{
+  background-image: url(../public/images/Shape\ 2.png);
+  content: "";
+  right:30px;
+  top:-50px;
+  width: 40%;
+  height: 90%;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 46%;
+  background-position: center 130px;
+  z-index: -1;
+
+}
+.banner h1,
+.banner h1 span{
+  font-family: 'PuntaExtrabold';
+  color: var(--menu-link);
+  font-size:82px;
+}
+.banner h1 span.sp-color{
+  color: #FF4DFF;
+}
+.banner p{
+  font-family: 'PuntaRegular';
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.banner ul{
+  margin: 20px 0;
+}
+.banner ul li{
+  margin: 0 20px;
+  position: relative;
+}
+.banner ul li::after{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  top: 11px;
+  right: -24px;
+  background: #FF4DFF;
+}
+.banner ul li:last-child::after{
+  display: none;
+}
+.banner ul li a{
+  font-family: 'PuntaRegular';
+  font-size:25px;
+  text-decoration: none;
+}
+.line{
+  background: var(--line-color);
+  display: table;
+  margin: auto;
+  height: 4px;
+  margin-top:40px;
+  width: 22%;
+}
+/* body part */
+.how-it-work-1{
+  padding-top: 140px;
+}
+.how-it-work-1 h2{
+  font-family: 'PuntaExtrabold';
+}
+.how-it-work-1 p{
+  font-family: 'FuturaMedium';
+  margin-top: 15px;
+}
+.sub-head,
+.sub-head span{
+  font-family: 'PuntaExtrabold';
+  font-size: 44px;
+}
+
+.bd-how{
+  margin-top: 80px;
+}
+
+.how-it-work-1 li{
+  margin-bottom: 50px;
+}
+.comon-part1{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+}
+.comon-part1:after{
+  width: 4px;
+  height: 70px;
+  background: transparent linear-gradient(180deg, #4111F900 0%, #4111F9 49%, #4111F900 100%) 0% 0% no-repeat padding-box;;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -41px;
+  top: 10px;
+}
+.comon-part1 figure{
+  width: 20%;
+}
+.comon-part1 .right-content1{
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.comon-part1 .right-content1 p{
+  line-height: 26px;
+  width: 80%;
+  margin-top: 10px;
+}
+.credibility-div{
+  padding-top: 90px;
+}
+.bd-cre{
+  margin-top: 80px;
+}
+.credibility-div p{
+  font-family: 'FuturaMedium';
+}
+.products-div1{
+  display: inline-block;
+  padding: 80px 0 0 0;
+  width: 100%;
+}
+.products-div1 p{
+  font-family: 'FuturaMedium';
+  margin: 20px 0 0 0;
+}
+.allow-div1{
+  display: inline-block;
+   width: 100%;
+   margin-top: 80px;
+}
+.comon-alow-div{
+  border: 4px solid #FF4DFF;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 40px 80px;
+  margin:0 0 60px 0;
+  width: 100%;
+}
+.comon-alow-div h2{
+  font-size: 60px;
+  font-family: 'PuntaExtrabold';
+}
+.comon-alow h5{
+  font-family: 'FuturaBold';
+  width: 84%;
+  line-height: 30px;
+}
+.comon-alow p{
+  width:94%;
+  font-size: 15px;
+  font-family: 'FuturaMedium';
+}
+.lline-div{
+  background: transparent linear-gradient(180deg, #4111F900 0%, #4111F9 49%, #4111F900 100%) 0% 0% no-repeat padding-box;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 80px;
+  height: 8px;
+}
+.comon-alow-div h3{
+  font-family: 'FuturaBold';
+  font-size: 25px;
+  margin-top: 25px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* footer */
+  footer {
+    display: inline-block;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  footer p {
+    font-size: 25px;
   }
-}
