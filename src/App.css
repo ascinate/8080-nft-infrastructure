@@ -1078,6 +1078,9 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .comon-part1-ps {
       height: 230px;
      }
+     .col-wallte-btn{
+      width: 171px;
+     }
   }
   @media screen and (max-width: 360px) {
     .navbar-brand img{
