@@ -183,6 +183,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     height: 46px;
     align-items: center;
     display: flex;
+    justify-content: center;
 
   }
   .contact-btn{
@@ -217,13 +218,19 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     height: 46px;
     align-items: center;
     display: flex;
+    transition: all 0.5s;
   }
   
   .comon-buuton img{
     width: 24px;
-    margin-left: 12px;
+    transition: all 0.5s;
+    position: relative;
+    left: 12px;
   }
 
+  .comon-buuton:hover img{
+    left: 18px;
+  }
   .comon-buuton:hover,
   .login-btn:hover,
   .contact-btn:hover{
@@ -234,7 +241,11 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   .comon-logo{
     display: grid !important;
     align-content: center;
-    height: 105px;
+    height: 98px;
+  }
+  .comon-logo img{
+    width:80%;
+    margin: auto;
   }
   .multi-logo-div{
     display: inline-block;
@@ -242,7 +253,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     border-top: solid 2px #4111F9;
     border-bottom: solid 2px #4111F9;
     margin-top: 100px;
-    padding: 25px 0;
+    padding:0;
   }
   .multi-logo-div .slick-arrow{
     display: none !important;
@@ -474,11 +485,11 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   font-family: 'FuturaMedium';
 }
 .lline-div{
-  background: transparent linear-gradient(180deg, #4111F900 0%, #4111F9 49%, #4111F900 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(260deg, #4111F900 10%, #4111F9 49%, #4111F900 100%) 0% 0% no-repeat padding-box;
   margin-bottom: 20px;
   display: inline-block;
-  width: 80px;
-  height: 8px;
+  width: 79px;
+  height: 4px;
 }
 .comon-alow-div h3{
   font-family: 'FuturaBold';
@@ -528,6 +539,14 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+  font-family: 'FuturaMedium';
+  transition: all 0.5s;
+}
+.col-wallte-btn:hover {
+  color: #fff;
+}
+.col-wallte-btn:hover img{
+  left:15px;
 }
 .logomd{
   margin: auto;
@@ -535,7 +554,10 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
 }
 .col-wallte-btn img{
   width: 23px;
-  margin-left: 8px;
+  margin-left:0;
+  transition: all 0.5s;
+  position: relative;
+  left: 8px;
 }
 .inside-prodcuts1 h2{
   font-family: 'PuntaExtrabold';
@@ -611,17 +633,35 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   }
   footer p {
     font-size: 17px;
+    font-family: 'FuturaBold';
   }
   .navbar-toggler svg{
     color: #fff !important;
     width: 35px;
     height: 35px;
   }
+  .footer-lg img{
+    width: 30%;
+    margin: auto;
+
+
+  }
   .logo-modal-div1 h2{
     font-family: 'PuntaExtrabold';
     font-size: 25px;
   }
-  @media screen and (max-width:1200px) {
+  .logo-modal-div1 .logomd{
+    width: 80%;
+    margin: auto;
+  }
+  @media screen and (min-width:1200px) {
+
+    .modal-xl {
+      max-width: 1223px;
+    }
+    .modal-logoiny .modal-lg {
+       max-width: 580px;
+    }
   }
   @media screen and (max-width:1180px) {
     .comon-alow h5{
@@ -783,7 +823,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     height: 260px;
   }
   .comon-part1-ps .comon-buuton {
-    padding: 4px 14px !important;
+    padding: 4px 24px !important;
     font-size: 12px !important;
     margin: 0 !important;
   }
@@ -899,10 +939,14 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   }
   @media screen and (max-width: 375px) {
     .navbar-brand img{
-      width: 120px;
+      width:109px;
      }
      .banner h1, .banner h1 span {
       font-size: 48px;
+     }
+     .bar1 svg{
+      width: 25px;
+      height: 25px;
      }
      .banner h1 span.sp-color{
       display: block;
@@ -921,13 +965,13 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       right: -19px;
      }
      .comon-buuton{
-      padding: 6px 18px !important;
+      padding: 6px 25px !important;
       font-size: 15px !important;
      }
      .contact-btn{
       width: 150px;
-      padding: 6px 18px !important;
-      font-size: 15px !important;
+      padding: 6px 25px !important;
+      font-size: 14px !important;
       text-align: center;
       justify-content: center;
      }
@@ -944,7 +988,6 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .how-it-work-1 .comon-buuton{
       text-align: center;
       margin:25px auto !important;
-      display: table;
      }
      .comon-part1 p,
      .comon-part1 h2{
@@ -1025,7 +1068,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       padding-top: 70px;
      }
      .comon-alow-div h3{
-      font-size: 18px;
+      font-size: 16px;
      }
      .products-div1 p,
      .credibility-div p,
@@ -1034,7 +1077,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       font-size: 14px;
      }
      .multi-logo-div{
-      padding: 10px 0;
+      padding: 3px 0;
       margin-top: 50px;
      }
 
@@ -1078,8 +1121,53 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .comon-part1-ps {
       height: 230px;
      }
-     .col-wallte-btn{
-      width: 171px;
+     .col-wallte-btn {
+      width: 165px;
+      justify-content: center;
+      font-size: 14px;
+     }
+     .navbar-collapse .comon-buuton {
+      margin-top: 20px !important;
+      width: 161px;
+     }
+     .login-btn{
+      width: 100px;
+      margin: auto;
+      margin-top: 15px;
+     }
+     .navbar{
+      padding-top: 2px;
+     }
+     .navbar-collapse{
+      width: 90%;
+      display: table;
+      margin: auto;
+      flex-grow: 0;
+      align-items: center;
+      flex-basis: inherit;
+     }
+     .modal-logoiny .modal-body{
+      width: 90%;
+      margin: auto;
+     }
+     .comingsoon-btn{
+      width: 147px;
+      font-size: 14px;
+     }
+     .lline-div{
+      width: 63px;
+      height: 3px;
+      margin-bottom: 6px;
+     }
+     footer p{
+      font-size: 12px;
+     }
+     .footer-lg img {
+      width: 46%;
+     }
+     .navbar{
+      padding-top: 3px;
+      padding-bottom: 3px;
      }
   }
   @media screen and (max-width: 360px) {
@@ -1312,5 +1400,13 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .comon-part1-ps {
       height: 250px;
+     }
+     .navbar-collapse .comon-buuton {
+      margin-top: 20px !important;
+      width: 152px;
+     }
+     .login-btn{
+      width: 100px;
+      margin: auto;
      }
   }

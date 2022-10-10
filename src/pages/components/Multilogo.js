@@ -11,7 +11,6 @@ function Multilogo(){
     const settings = {
         dots: false,
         infinite: false,
-        margin:50,
         autoplay:true,
         speed: 500,
         slidesToShow:4,

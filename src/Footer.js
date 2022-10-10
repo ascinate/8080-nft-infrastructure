@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import FooterLogo from "../src/images/8080logo3.png";
-import ModalLogo from "./images/8080logo3MD.png";
+import FooterLogo from "../src/images/8080logo3-big.png";
+import ModalLogo from "./images/8080logo3-big.png";
 import Arrow from "./images/arrow.png";
 import { BsArrowRight, BsFillCircleFill, BsX  } from "react-icons/bs";
 
@@ -17,14 +17,14 @@ function Footer(){
                      <NavLink to="/" className="footer-lg">
                          <img src={FooterLogo} alt="logo"/>
                      </NavLink>
-                     <p className="text-white mb-0 recive-text1"> All Rights Reserved</p>
+                     <p className="text-white mb-0 recive-text1"> All rights reserved </p>
                 </div>
             </div>
          </footer>
 
 
          <div className="modal fade modal-logoiny" id="logoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-dialog modal-dialog-centered modal-lg">
                 <div className="modal-content">
                
                 <div className="modal-body">
