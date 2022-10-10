@@ -13,7 +13,7 @@ function Products(){
 
     return(
         <>
-          <div className="products-div1">
+       
              <div className="container">
                 <h2 className="text-center sub-head"> Products </h2>
                 <p className="col-lg-6 mx-auto text-center"> The 4 products: Allowlist, Mint, Stake & Marketplace allow you to instantly
@@ -93,7 +93,7 @@ function Products(){
                 </div>
 
              </div>
-          </div>
+        
         </>
     )
 };

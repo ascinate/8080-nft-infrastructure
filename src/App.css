@@ -559,21 +559,117 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   @media screen and (max-width:1200px) {
   }
   @media screen and (max-width:1180px) {
+    .comon-alow h5{
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .top-sec-bar .navbar .navbar-nav .nav-item .nav-link{
+      font-size: 14px;
+    }
   }
   @media screen and (max-width: 900px) {
-  }
-  @media screen and (max-width: 667px) {
+    .how-it-work-1 h2,
+    .how-it-work-1 p{
+      text-align: center;
+    }
+    .comon-part1 h2,
+    .comon-part1 p{
+      text-align: left;
+    }
+    .how-it-work-1 ul {
+      margin-top: 30px;
+      margin-left: 90px;
+    }
+
+    .comon-buuton{
+      margin: auto !important;
+    }
+    .cre-img{
+      width: 80%;
+      margin: auto;
+      display: block;
+    }
+    .credibility-div p{
+      text-align: center;
+    }
+    .contact-btn{
+      margin-top: 18px;
+      width: 199px;
+      justify-content: center;
+    }
+    .comon-alow-div h3{
+      margin-bottom: 10px;
+    }
   }
   @media screen and (max-width:739px) {
   }
-  @media screen and (max-width:428px) {
+  @media screen and (max-width: 667px) {
+    .banner h1, .banner h1 span{
+       font-size: 100px;
+    }
+    .banner::before {
+      content: "";
+      left: -110px;
+      top: 132px;
+      width: 70%;
+    }
+    .banner::after {
+      content: "";
+      right: 0;
+      top: 140px;
+      width: 40%;
   }
-  @media screen and (max-width: 375px) {
+  .how-it-work-1 h2,
+  .how-it-work-1 p{
+    text-align: center;
+  }
+  .comon-part1 h2,
+  .comon-part1 p{
+    text-align: left;
+  }
+  .how-it-work-1 ul {
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+  .comon-part1 .right-content1 p{
+    width: 100%;
+  }
+  .comon-part1 .right-content1{
+    padding-left: 20px;
+  }
+  .comon-buuton{
+    margin: auto !important;
+  }
+
+  .cre-img{
+    margin-bottom: 20px;
+  }
+
+  .credibility-div p{
+    text-align: center;
+  }
+  .contact-btn{
+    width: 194px;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  .comon-alow-div{
+    padding: 40px;
+  }
+  .comon-alow-div h2 {
+    font-size: 41px;
+  }
+  .comon-alow-div h3{
+    margin-bottom: 15px;
+  }
+}
+  
+  @media screen and (max-width:428px) {
     .navbar-brand img{
       width: 120px;
      }
-     .banner h1, .banner h1 span{
-      font-size: 37px;
+     .banner h1, .banner h1 span {
+      font-size: 55px;
      }
      .banner h1 span.sp-color{
       display: block;
@@ -584,6 +680,103 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .banner ul li{
       margin: 0 14px;
      }
+
+     .banner ul li::after {
+      width: 8px;
+      height: 8px;
+      top: 8px;
+      right: -19px;
+     }
+     .banner::after{
+      right: 0;
+      top: 70px;
+     }
+     .banner::before{
+      left: -20px;
+      top: 132px;
+     }
+     .how-it-work-1 h2, .how-it-work-1 p {
+      text-align: center;
+     }
+     .sub-head, .sub-head span{
+      font-size: 32px;
+     }
+     .how-it-work-1 {
+      padding-top: 90px;
+     }
+     .comon-part1 p, .comon-part1 h2 {
+      text-align: left;
+     }
+     .comon-part1 figure {
+      width: 14%;
+     }
+     .how-it-work-1 ul {
+      margin-top: 30px;
+      margin-left: 80px;
+     }
+     .comon-part1 .right-content1{
+      padding-left: 20px;
+     }
+     .comon-part1 .right-content1 p {
+      line-height: 20px;
+      width: 100%;
+      margin-top: 2px;
+      font-size: 15px;
+     }
+     .comon-buuton{
+      justify-content: center;
+      margin: auto !important;
+     }
+     .comon-alow-div{
+      padding: 40px 20px;
+     }
+     .contact-btn{
+      margin-top: 25px !important;
+      width: 190px;
+      justify-content: center;
+     }
+     .cre-img{
+      width: 80%;
+      margin: auto;
+      display: table;
+      margin-bottom: 20px;
+     }
+     .credibility-div p{
+      text-align: center;
+     }
+     .comon-alow-div h2 {
+      font-size: 34px;
+     }
+     .comon-alow-div h3{
+      font-size: 18px;
+      margin-bottom: 15px;
+     }
+     .comon-alow h5{
+      width: 100%;
+      font-size: 16px;
+      line-height: 23px;
+     }
+     .comon-logo{
+      height: 64px;
+     }
+  }
+  @media screen and (max-width: 375px) {
+    .navbar-brand img{
+      width: 120px;
+     }
+     .banner h1, .banner h1 span {
+      font-size: 48px;
+     }
+     .banner h1 span.sp-color{
+      display: block;
+     }
+     .banner ul li a {
+      font-size: 19px;
+     }
+     .banner ul li{
+      margin: 0 14px;
+     }
+     
      .banner ul li::after {
       width: 8px;
       height: 8px;
@@ -683,13 +876,25 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
 
      .banner::before{
       left: -48px;
-      top: 56px;
+      top: 98px;
       width: 52%;
      }
      .banner::after{
-      right: -8px;
-      top: 8px;
+      right: -30px;
+      top: 44px;
       width: 50%;
+     }
+     .how-it-work-1 {
+      padding-top: 70px;
+     }
+     .comon-alow-div h3{
+      font-size: 18px;
+     }
+     .products-div1 p,
+     .credibility-div p,
+     .how-it-work-1 p,
+     .banner p{
+      font-size: 14px;
      }
   }
   @media screen and (max-width: 360px) {
@@ -777,14 +982,14 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .navbar-brand img{
       width: 120px;
      }
-     .banner h1, .banner h1 span{
-      font-size: 37px;
+     .banner h1, .banner h1 span {
+      font-size: 46px;
      }
      .banner h1 span.sp-color{
       display: block;
      }
      .banner ul li a {
-      font-size: 19px;
+      font-size: 16px;
      }
      .banner ul li{
       margin: 0 14px;
@@ -848,6 +1053,33 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       padding: 40px 20px;
      }
      .comon-alow-div h2 {
-      font-size: 38px;
+      font-size: 27px;
+     }
+
+     .banner::before {
+      left: -39px;
+      top: 83px;
+      width: 48%;
+     }
+     .banner{
+      padding-top: 52px;
+     }
+     .banner::after {
+      right: 0;
+      top: 22px;
+      width: 50%;
+     }
+     .banner ul {
+      margin: 14px 0;
+     }
+     .how-it-work-1 {
+      padding-top: 70px;
+     }
+     .comon-alow h5 {
+      font-size: 11px;
+      line-height: 20px;
+     }
+     .products-div1 p{
+      font-size: 13px;
      }
   }
