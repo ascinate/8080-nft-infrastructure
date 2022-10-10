@@ -8,7 +8,7 @@ const ButtonFuntion = () => {
           <div>
            
 
-            <button className="btn mx-auto mt-3 comon-buuton"> Get Started
+            <button className="btn mx-auto mt-3 comon-buuton" data-bs-toggle="modal" data-bs-target="#logoModal"> Get Started
                 <img src={Arrow} alt="arrow"/>
             </button>
              
@@ -17,10 +17,15 @@ const ButtonFuntion = () => {
       } else {
         return (
           <div>
-           <button className="btn mx-auto mt-3 comon-buuton"> 
+           <button className="btn mx-auto mt-3 comon-buuton" > 
               Coming Soon
            </button>
+
+           
           </div>
+
+          
+          
         );
       }
 

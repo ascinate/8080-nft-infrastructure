@@ -35,7 +35,7 @@ function Products(){
 
                                     <p className="text-center col-lg-9 mx-auto"> {paratwo} </p>
 
-                                    <div className="row row-cols-2 row-cols-lg-4 gy-4 my-5">
+                                    <div className="row row-cols-2 row-cols-lg-4 gy-4 mt-3 mb-5 mb-lg-0">
 
                                         <div className="col">
                                             <div className="comon-alow">

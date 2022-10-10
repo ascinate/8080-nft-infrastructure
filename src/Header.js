@@ -1,6 +1,8 @@
 import React, {useRef, useState, useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import { BsArrowRight, BsFillCircleFill, BsX  } from "react-icons/bs";
+import { GrClose } from "react-icons/gr";
+import { MdClose } from "react-icons/md";
 import Logo from "../src/images/logo.png";
 import Arrow from "../src/images/arrow.png";
 import AllModalData from "./pages/components/ProdcutsMoadlApii";
@@ -25,6 +27,10 @@ function Header(){
         document.querySelector("#main-total").classList.add('new-show-socal-div');
     }
 
+    const onCkickHandelNew=(event)=> {
+      document.querySelector(".top-sec-bar").classList.toggle('show-menu1');
+    }
+
     const [ allproducts, setProductsData] =useState(AllModalData);
     console.log(allproducts);
 
@@ -38,9 +44,10 @@ function Header(){
                       <div className="container-fluid">
                         <NavLink to="/" className="navbar-brand"> 
                            <img src={Logo} alt="logo"/>
-                        </NavLink>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                           <FaBars/>
+                        </NavLink> 
+                        <button className="navbar-toggler" onClick={onCkickHandelNew} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+                           <span className="bar1"> <FaBars/> </span>
+                           <span className="close1"> <MdClose/> </span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -74,7 +81,7 @@ function Header(){
 
 
         <div className="modal fade" id="productsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog modal-fullscreen products-md">
+            <div className="modal-dialog modal-xl products-md">
               <div className="modal-content">
                 
                 <div className="modal-body">
@@ -89,7 +96,7 @@ function Header(){
                         <p className="text-center"> To get started, connect a product below </p>
                         <div className="container">
                         
-                        <div className="row row-cols-1 row-cols-lg-2 g-lg-4 mt-4">
+                        <div className="row row-cols-1 row-cols-lg-2 gy-4 g-lg-4 mt-0 mt-lg-4">
                         {
                           allproducts.map((curElem) =>{
                               const { id, titel, para, action} = curElem;

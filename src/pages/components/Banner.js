@@ -38,7 +38,7 @@ function Banner(){
                     <p className="text-center col-lg-6 mx-auto"> 8080 allows you to instantly launch your NFT infrastructure end-to-end.
                     Reclaim dev time and focus on making it moon! </p>
 
-                    <button className="btn mx-auto comon-buuton"> Get Started
+                    <button className="btn mx-auto comon-buuton" data-bs-toggle="modal" data-bs-target="#productsModal"> Get Started
                        <img src={Arrow} alt="arrow"/>
                     </button>
                  </div>

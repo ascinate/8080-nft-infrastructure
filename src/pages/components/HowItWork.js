@@ -18,7 +18,7 @@ function HowItWork(){
                             launch allowlist, mint, stake or marketplace
                             in minutes</p>
                             <div className="d-none d-lg-block">
-                                 <button className="btn mt-4 comon-buuton"> Get Started
+                                 <button className="btn mt-4 comon-buuton" data-bs-toggle="modal" data-bs-target="#productsModal"> Get Started
                                     <img src={Arrow} alt="arrow"/>
                                  </button>
                             </div>
@@ -63,7 +63,7 @@ function HowItWork(){
                                </li>
                             </ul>
                             <div className="d-block d-lg-none">
-                                 <button className="btn mt-4 comon-buuton"> Get Started
+                                 <button className="btn mt-4 comon-buuton" data-bs-toggle="modal" data-bs-target="#productsModal"> Get Started
                                     <img src={Arrow} alt="arrow"/>
                                  </button>
                             </div>

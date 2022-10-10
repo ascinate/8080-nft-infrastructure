@@ -126,7 +126,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   font-family: 'Source Sans Pro', sans-serif;
   font-size:17px;
   color:var(--font-body);
-  padding:10px 0 0 0;
+  padding:0 0 0 0;
   }
 
   a{
@@ -197,6 +197,16 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     display: flex;
   }
 
+  .navbar-fixed-top{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+
+
+
+  }
   .comon-buuton{
     font-family: 'AvenirBlack';
     padding: 6px 36px !important;
@@ -282,14 +292,14 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
  
 /* banner */
 .banner{
-  padding-top: 70px;
+  padding-top:200px;
   position: relative;
 }
 .banner::before{
   background-image: url(../public/images/Shape\ 1.png);
   content: "";
   left: 100px;
-  top: 52px;
+  top: 92px;
   width: 40%;
   height: 90%;
   display: inline-block;
@@ -300,12 +310,15 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   z-index: -1;
 
 }
-
+.full-with .navbar-fixed-top{
+  background: #0C0037;
+  z-index: 3;
+}
 .banner::after{
   background-image: url(../public/images/Shape\ 2.png);
   content: "";
   right:30px;
-  top:-50px;
+  top:80px;
   width: 40%;
   height: 90%;
   display: inline-block;
@@ -472,9 +485,57 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   font-size: 25px;
   margin-top: 25px !important;
 }
+.products-md .modal-content{
+  background: none;
+}
+.inside-prodcuts1{
+  padding:0 70px;
+}
 .products-md .modal-body{
   padding-top: 30px;
+  border-radius: 15px;
   background: transparent linear-gradient(90deg, #4111F9 0%, #FF4DFF 100%) 0% 0% no-repeat padding-box;
+}
+
+.modal-logoiny .modal-body{
+  padding:80px;
+  border-radius: 10px;
+  background: transparent linear-gradient(90deg, #4111F9 0%, #FF4DFF 100%) 0% 0% no-repeat padding-box;
+}
+.modal-logoiny .modal-content{
+  background: none !important;
+}
+.modal-logoiny .btn-close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+}
+.modal-logoiny .btn-close svg{
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  opacity: 9 !important;
+
+}
+.col-wallte-btn{
+  border: solid 2px #fff;
+  border-radius: 50px;
+  color: #fff;
+  padding: 6px 22px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.logomd{
+  margin: auto;
+  display: table;
+}
+.col-wallte-btn img{
+  width: 23px;
+  margin-left: 8px;
 }
 .inside-prodcuts1 h2{
   font-family: 'PuntaExtrabold';
@@ -549,12 +610,16 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     width: 100%;
   }
   footer p {
-    font-size: 25px;
+    font-size: 17px;
   }
   .navbar-toggler svg{
     color: #fff !important;
     width: 35px;
     height: 35px;
+  }
+  .logo-modal-div1 h2{
+    font-family: 'PuntaExtrabold';
+    font-size: 25px;
   }
   @media screen and (max-width:1200px) {
   }
@@ -599,6 +664,40 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     }
     .comon-alow-div h3{
       margin-bottom: 10px;
+    }
+
+    .navbar-collapse{
+      padding: 30px;
+      text-align: center;
+      background: transparent linear-gradient(180deg, #370037 0%, #0C0037 100%) 0% 0% no-repeat padding-box;
+    }
+    .top-sec-bar .navbar .navbar-nav .nav-item .nav-link {
+      font-size: 19px;
+    }
+    .navbar-collapse .comon-buuton{
+      margin-top: 20px !important;
+      width: 192px;
+    }
+    .login-btn{
+      margin-top: 20px;
+    }
+    .navbar-toggler:focus{
+      box-shadow: none !important;
+    }
+    .navbar-toggler span svg{
+      color: #fff !important;
+    }
+    .close1 svg{
+      color: #fff;
+    }
+    .close1{
+      display: none;
+    }
+    .show-menu1 .bar1{
+      display:none;
+    }
+    .show-menu1 .close1{
+      display: block;
     }
   }
   @media screen and (max-width:739px) {
@@ -661,6 +760,39 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   }
   .comon-alow-div h3{
     margin-bottom: 15px;
+  }
+  .inside-prodcuts1 {
+    padding: 0 ;
+  }
+  .inside-prodcuts1 h2 {
+    font-family: 'PuntaExtrabold';
+    font-size: 29px;
+  }
+  .products-md .inside-prodcuts1 .btn-close {
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+  .inside-prodcuts1 p{
+    font-size: 14px;
+  }
+  .comon-part1-ps{
+    padding: 25px;
+  }
+  .comon-part1-ps{
+    height: 260px;
+  }
+  .comon-part1-ps .comon-buuton {
+    padding: 4px 14px !important;
+    font-size: 12px !important;
+    margin: 0 !important;
+  }
+  .comon-part1-ps .comingsoon-btn{
+    width: 144px;
+    font-size: 12px !important;
+  }
+  .inside-prodcuts1 h2{
+    font-size: 22px;
   }
 }
   
@@ -758,6 +890,11 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .comon-logo{
       height: 64px;
+      width: 69%;
+     }
+     .how-it-work-1 .bd-how .sub-head,
+     .how-it-work-1 .bd-how .sub-head span{
+      font-size: 21px;
      }
   }
   @media screen and (max-width: 375px) {
@@ -863,15 +1000,15 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       padding: 40px 20px;
      }
      .comon-alow-div h2 {
-      font-size: 38px;
+      font-size: 32px;
      }
      .comon-alow h5{
       width: 100%;
-      font-size: 16px;
+      font-size: 13px;
      }
 
      .comon-logo {
-      height: 45px;
+      height: 36px;
      }
 
      .banner::before{
@@ -879,9 +1016,9 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       top: 98px;
       width: 52%;
      }
-     .banner::after{
-      right: -30px;
-      top: 44px;
+     .banner::after {
+      right: 0;
+      top: 64px;
       width: 50%;
      }
      .how-it-work-1 {
@@ -895,6 +1032,51 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .how-it-work-1 p,
      .banner p{
       font-size: 14px;
+     }
+     .multi-logo-div{
+      padding: 10px 0;
+      margin-top: 50px;
+     }
+
+     .how-it-work-1 .line,
+     .credibility-div .line,
+     .products-div1 .line{
+      width: 72%;
+      margin-top: 30px;
+     }
+     .credibility-div .line{
+      margin-top: 20px;
+     }
+     .products-div1 p{
+      width: 80%;
+      margin: auto;
+      margin-top: 15px;
+     }
+     .allow-div1{
+      margin-top: 50px;
+     }
+     .products-div1,
+     .credibility-div{
+      padding-top: 50px;
+     }
+     .comon-alow-div
+     {
+      margin-bottom: 50px;
+     }
+     .bd-how{
+      margin-top: 50px;
+     }
+     .comon-alow p{
+      width: 100%;
+      font-size: 12px;
+     }
+     .banner {
+      padding-top: 129px;
+     
+     }
+
+     .comon-part1-ps {
+      height: 230px;
      }
   }
   @media screen and (max-width: 360px) {
@@ -970,12 +1152,13 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       padding: 40px 20px;
      }
      .comon-alow-div h2 {
-      font-size: 38px;
+      font-size: 30px;
      }
      .banner::before{
       left: -48px;
-      top: 56px;
+      top: 116px;
       width: 52%;
+
      }
   }
   @media screen and (max-width: 320px) {
@@ -1006,6 +1189,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .banner p{
       margin-bottom: 30px;
+      width: 75%;
      }
      .how-it-work-1 h2,
      .how-it-work-1 p{
@@ -1053,7 +1237,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       padding: 40px 20px;
      }
      .comon-alow-div h2 {
-      font-size: 27px;
+      font-size: 25px;
      }
 
      .banner::before {
@@ -1062,7 +1246,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       width: 48%;
      }
      .banner{
-      padding-top: 52px;
+      padding-top: 112px;
      }
      .banner::after {
       right: 0;
@@ -1080,6 +1264,50 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       line-height: 20px;
      }
      .products-div1 p{
-      font-size: 13px;
+      font-size: 12px;
+      margin-top: 10px;
+     }
+     .how-it-work-1 .line,
+     .credibility-div .line,
+     .products-div1 .line{
+      width: 72%;
+      margin-top: 30px;
+     }
+     .credibility-div .line{
+      margin-top: 20px;
+     }
+     .bd-how{
+      margin-top: 40px;
+     }
+     .credibility-div {
+      padding-top: 40px;
+     }
+     .multi-logo-div{
+      margin-top: 50px;
+     }
+     .products-div1{
+      padding-top: 50px;
+     }
+     .allow-div1{
+      margin-top: 35px;
+     }
+     .comon-alow-div{
+      margin-bottom: 35px;
+     }
+     .how-it-work-1 p{
+      width: 80%;
+      margin: auto;
+      font-size: 14px;
+      margin-top: 15px !important;
+     }
+     .multi-logo-div{
+      padding: 10px 0;
+     }
+     .how-it-work-1 .sub-head,
+     .how-it-work-1 .sub-head span{
+      font-size: 22px;
+     }
+     .comon-part1-ps {
+      height: 250px;
      }
   }

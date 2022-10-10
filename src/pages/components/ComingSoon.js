@@ -4,7 +4,7 @@ function ComingSoon(){
     return(
         <>
         <button type="button" className="btn comingsoon-btn get-started-bty">
-           ComingSoon
+           Coming Soon
         </button>
         </>
     )
