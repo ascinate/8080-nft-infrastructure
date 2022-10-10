@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Arrow from "../../images/arrow.png";
 
 
@@ -27,10 +28,10 @@ function Creadibility(){
                      8080Tools is the productization of this expansive experience.</p>
 
                      <div className="d-flex  flex-column-reverse  flex-lg-row align-items-center mt-5">
-                        <button className="btn  contact-btn ms-lg-0"> Contact Us </button>
-                        <button className="btn  comon-buuton"> Learn More
+                        <a href="https://www.0xytocin.com/contact" target="_blank"  className="btn  contact-btn ms-lg-0"> Contact Us </a>
+                        <a href="https://www.0xytocin.com/" target="_blank" className="btn  comon-buuton"> Learn More
                            <img src={Arrow} alt="arrow"/>
-                        </button>
+                        </a>
                      </div>
                   </div>
             </div>
