@@ -1169,6 +1169,15 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       padding-top: 3px;
       padding-bottom: 3px;
      }
+     .how-it-work-1 p{
+      width: 80%;
+      margin: auto;
+      margin-top: 10px;
+     }
+     .credibility-div p {
+      width: 81%;
+      margin: auto;
+     }
   }
   @media screen and (max-width: 360px) {
     .navbar-brand img{
