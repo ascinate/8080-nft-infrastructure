@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
 import Arrow from "../../images/arrow.png";
 import AlldataProducts from "./ProductsItemsApi";
+import ButtonFuntion from "./ButtonFuntion";
 
 function Products(){
     const [ allproducts, setProductsData] =useState(AlldataProducts);
@@ -24,7 +25,7 @@ function Products(){
                   {
                     allproducts.map((curElem) =>{
                         const { id, title, paraone, paratwo, feature1, feature1dl, feature2, feature2dl,
-                            feature3, feature3dl, feature4, feature4dl, action } = curElem;
+                            feature3, feature3dl, feature4, feature4dl, action, sattus } = curElem;
                         return(
                             <>
                                
@@ -34,7 +35,7 @@ function Products(){
 
                                     <p className="text-center col-lg-9 mx-auto"> {paratwo} </p>
 
-                                    <div className="row row-cols-1 row-cols-lg-4 my-5">
+                                    <div className="row row-cols-2 row-cols-lg-4 gy-4 my-5">
 
                                         <div className="col">
                                             <div className="comon-alow">
@@ -71,9 +72,13 @@ function Products(){
                                     </div>
                                     <h3 className="text-center"> {action} </h3>
 
-                                    <button className="btn mx-auto mt-3 comon-buuton"> Get Started
-                                        <img src={Arrow} alt="arrow"/>
-                                    </button>
+                                   <div className="text-center pro-list-action">
+
+                                    {sattus}
+
+                                   </div>
+
+                                    
 
                             </div>
                      

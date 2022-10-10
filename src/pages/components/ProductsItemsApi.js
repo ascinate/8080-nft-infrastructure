@@ -1,3 +1,5 @@
+import ComingSoon from "./ComingSoon";
+import ButtonFuntion from "./ButtonFuntion";
 
 const AlldataProducts =[
 
@@ -15,6 +17,7 @@ const AlldataProducts =[
       feature4:"Zero Cost, Off- Chain WLs",
       feature4dl:"Infinitely flexible and no limit on number of addresses. Zero cost",
       action:"FREE!",
+      sattus:<ButtonFuntion/>,
 
     },
 
@@ -33,6 +36,7 @@ const AlldataProducts =[
         feature4:"Bonuses Built-in",
         feature4dl:"Easily configure bonuses for multi-token holders and for locks",
         action:"2 ETH/DROP",
+        sattus:<ComingSoon/>,
      },
 
      {
@@ -49,6 +53,7 @@ const AlldataProducts =[
         feature4:"8080 Ecosystem Edge",
         feature4dl:"The marketplace integrates with 8080 staking seamlessly",
         action:"2 ETH/DROP",
+        sattus:<ComingSoon/>,
      },
    
 

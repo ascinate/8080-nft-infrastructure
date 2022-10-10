@@ -222,9 +222,9 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   }
 
   .comon-logo{
-    display: inline-block;
-    width: 90%;
-    margin: auto;
+    display: grid !important;
+    align-content: center;
+    height: 105px;
   }
   .multi-logo-div{
     display: inline-block;
@@ -234,6 +234,33 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     margin-top: 100px;
     padding: 25px 0;
   }
+  .multi-logo-div .slick-arrow{
+    display: none !important;
+  }
+  .items-l{
+    display: flex;
+    justify-content: center;
+  }
+  .slick-track > div.slick-active:nth-child(3) .items-l{
+
+    text-align: right !important;
+  }
+  .slick-track > div.slick-active:nth-child(3) .items-l img{
+    margin-left: 67px;
+  }
+
+  .slick-track > div.slick-active:nth-child(1) .items-l img{
+    margin-left: -20px;
+  }
+
+  .slick-track > div.slick-active:nth-child(2) figure img{
+    margin-left: 20px;
+  }
+
+  .slick-track > div.slick-active:nth-child(4) .items-l img{
+    margin-left: 67px;
+  }
+
   .multi-logo-div .row > div:nth-child(3){
      text-align: right !important;
   }
@@ -445,7 +472,77 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   font-size: 25px;
   margin-top: 25px !important;
 }
+.products-md .modal-body{
+  padding-top: 30px;
+  background: transparent linear-gradient(90deg, #4111F9 0%, #FF4DFF 100%) 0% 0% no-repeat padding-box;
+}
+.inside-prodcuts1 h2{
+  font-family: 'PuntaExtrabold';
+  font-size: 50px;
+}
+.inside-prodcuts1 p{
+  font-family: 'PuntaExtrabold';
+  font-size: 22px;
+  font-weight:300;
+}
+.products-md .inside-prodcuts1 .btn-close{
+  position: absolute;
+  right:20px;
+}
+.products-md .inside-prodcuts1 .btn-close:focus{
+  box-shadow: none;
+}
+.products-md .inside-prodcuts1 .btn-close{
+  background: none;
+  opacity: 9 !important;
+  margin-right: 15px;
+}
+.products-md .inside-prodcuts1 .btn-close svg{
+  color: #fff;
+  width: 28px;
+  height: 28px;
 
+}
+.comon-part1-ps{
+  display: inline-block;
+  background: #190037 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  padding: 30px 50px;
+  width: 100%;
+  height: 300px;
+
+}
+.comon-part1-ps p{
+  margin: 15px 0 25px 0;
+  line-height: 25px;
+}
+.md-fot{
+  font-size: 20px;
+}
+.md-fot a{
+  font-family: 'PuntaExtrabold';
+  color: #859AFF;
+  text-decoration: none;
+}
+.comingsoon-btn{
+  background: transparent linear-gradient(165deg, #AFAFAF 0%, #555555 100%) 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  color: var(--menu-link);
+  font-family: 'AvenirBlack';
+  cursor: default !important;
+  display: flex;
+  height: 45px;
+  width: 185px;
+  align-items: center;
+  justify-content: center;
+}
+.comingsoon-btn:hover{
+  color: var(--menu-link);
+}
+.pro-list-action .comingsoon-btn{
+  margin: auto !important;
+  margin-top: 1rem!important;
+}
 /* footer */
   footer {
     display: inline-block;
@@ -453,4 +550,304 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   }
   footer p {
     font-size: 25px;
+  }
+  .navbar-toggler svg{
+    color: #fff !important;
+    width: 35px;
+    height: 35px;
+  }
+  @media screen and (max-width:1200px) {
+  }
+  @media screen and (max-width:1180px) {
+  }
+  @media screen and (max-width: 900px) {
+  }
+  @media screen and (max-width: 667px) {
+  }
+  @media screen and (max-width:739px) {
+  }
+  @media screen and (max-width:428px) {
+  }
+  @media screen and (max-width: 375px) {
+    .navbar-brand img{
+      width: 120px;
+     }
+     .banner h1, .banner h1 span{
+      font-size: 37px;
+     }
+     .banner h1 span.sp-color{
+      display: block;
+     }
+     .banner ul li a {
+      font-size: 19px;
+     }
+     .banner ul li{
+      margin: 0 14px;
+     }
+     .banner ul li::after {
+      width: 8px;
+      height: 8px;
+      top: 8px;
+      right: -19px;
+     }
+     .comon-buuton{
+      padding: 6px 18px !important;
+      font-size: 15px !important;
+     }
+     .contact-btn{
+      width: 150px;
+      padding: 6px 18px !important;
+      font-size: 15px !important;
+      text-align: center;
+      justify-content: center;
+     }
+     .banner p{
+      margin-bottom: 30px;
+     }
+     .how-it-work-1 h2,
+     .how-it-work-1 p{
+      text-align: center;
+     }
+     .sub-head, .sub-head span{
+      font-size: 31px;
+     }
+     .how-it-work-1 .comon-buuton{
+      text-align: center;
+      margin:25px auto !important;
+      display: table;
+     }
+     .comon-part1 p,
+     .comon-part1 h2{
+      text-align: left;
+     }
+     .comon-part1{
+      padding-left: 20px;
+     }
+     .comon-part1:after{
+      left: 0;
+     }
+     .comon-part1 h2{
+      font-size: 18px;
+     }
+     .comon-part1 .right-content1 p {
+      line-height: 20px;
+      width: 100%;
+      margin-top: 2px;
+      font-size: 15px;
+     }
+     .comon-part1 figure {
+      width: 14%;
+     }
+     .comon-part1 .right-content1 {
+      padding-left: 20px;
+     }
+
+     .credibility-div p{
+      text-align: center;
+     }
+     .cre-img{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      display: block;
+      margin-bottom: 20px;
+     }
+     .bd-cre {
+      margin-top: 30px;
+     }
+     .credibility-div .contact-btn{
+      margin-top: 15px !important;
+     }
+     .credibility-div .contact-btn,
+     .credibility-div .comon-buuton{
+      margin: auto;
+     }
+     .how-it-work-1 ul{
+      margin-top: 30px;
+      margin-left: 20px;
+     }
+     .comon-alow-div{
+      padding: 40px 20px;
+     }
+     .comon-alow-div h2 {
+      font-size: 38px;
+     }
+     .comon-alow h5{
+      width: 100%;
+      font-size: 16px;
+     }
+
+     .comon-logo {
+      height: 45px;
+     }
+
+     .banner::before{
+      left: -48px;
+      top: 56px;
+      width: 52%;
+     }
+     .banner::after{
+      right: -8px;
+      top: 8px;
+      width: 50%;
+     }
+  }
+  @media screen and (max-width: 360px) {
+    .navbar-brand img{
+      width: 120px;
+     }
+     .banner h1, .banner h1 span{
+      font-size: 37px;
+     }
+     .banner h1 span.sp-color{
+      display: block;
+     }
+     .banner ul li a {
+      font-size: 19px;
+     }
+     .banner ul li{
+      margin: 0 14px;
+     }
+     .banner ul li::after {
+      width: 8px;
+      height: 8px;
+      top: 8px;
+      right: -19px;
+     }
+     .comon-buuton{
+      padding: 6px 18px !important;
+      font-size: 15px !important;
+     }
+     .banner p{
+      margin-bottom: 30px;
+     }
+     .how-it-work-1 h2,
+     .how-it-work-1 p{
+      text-align: center;
+     }
+     .sub-head, .sub-head span{
+      font-size: 31px;
+     }
+     .how-it-work-1 .comon-buuton{
+      text-align: center;
+      margin:25px auto !important;
+      display: table;
+     }
+     .comon-part1 p,
+     .comon-part1 h2{
+      text-align: left;
+     }
+     .comon-part1{
+      padding-left: 20px;
+     }
+     .comon-part1:after{
+      left: 0;
+     }
+     .comon-part1 h2{
+      font-size: 18px;
+     }
+     .comon-part1 .right-content1 p {
+      line-height: 22px;
+      width: 100%;
+      margin-top: 2px;
+     }
+     .comon-part1 figure {
+      width: 14%;
+     }
+     .comon-part1 .right-content1 {
+      padding-left: 20px;
+     }
+
+     .credibility-div p{
+      text-align: center;
+     }
+     .comon-alow-div{
+      padding: 40px 20px;
+     }
+     .comon-alow-div h2 {
+      font-size: 38px;
+     }
+     .banner::before{
+      left: -48px;
+      top: 56px;
+      width: 52%;
+     }
+  }
+  @media screen and (max-width: 320px) {
+     .navbar-brand img{
+      width: 120px;
+     }
+     .banner h1, .banner h1 span{
+      font-size: 37px;
+     }
+     .banner h1 span.sp-color{
+      display: block;
+     }
+     .banner ul li a {
+      font-size: 19px;
+     }
+     .banner ul li{
+      margin: 0 14px;
+     }
+     .banner ul li::after {
+      width: 8px;
+      height: 8px;
+      top: 8px;
+      right: -19px;
+     }
+     .comon-buuton{
+      padding: 6px 18px !important;
+      font-size: 15px !important;
+     }
+     .banner p{
+      margin-bottom: 30px;
+     }
+     .how-it-work-1 h2,
+     .how-it-work-1 p{
+      text-align: center;
+     }
+     .sub-head, .sub-head span{
+      font-size: 31px;
+     }
+     .how-it-work-1 .comon-buuton{
+      text-align: center;
+      margin:25px auto !important;
+      display: table;
+     }
+     .comon-part1 p,
+     .comon-part1 h2{
+      text-align: left;
+     }
+     .comon-part1{
+      padding-left: 20px;
+     }
+     .comon-part1:after{
+      left: 0;
+     }
+     .comon-part1 h2{
+      font-size: 18px;
+     }
+     .comon-part1 .right-content1 p {
+      line-height: 20px;
+      width: 100%;
+      margin-top: 2px;
+      font-size: 15px;
+     }
+     .comon-part1 figure {
+      width: 14%;
+     }
+     .comon-part1 .right-content1 {
+      padding-left: 20px;
+     }
+
+     .credibility-div p{
+      text-align: center;
+     }
+
+     .comon-alow-div{
+      padding: 40px 20px;
+     }
+     .comon-alow-div h2 {
+      font-size: 38px;
+     }
   }

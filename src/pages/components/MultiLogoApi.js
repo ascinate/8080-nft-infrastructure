@@ -21,6 +21,16 @@ const AlldataLogo =[
         name:"chain-scouts-logo",
         img:"images/lgb-logo.png",
     },
+    {
+        id:5,
+        name:"chain-scouts-logo",
+        img:"images/Project_godjira_logo.png",
+    },
+    {
+        id:6,
+        name:"chain-scouts-logo",
+        img:"images/tomodachi logo.png",
+    },
 
    
 

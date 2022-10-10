@@ -4,7 +4,7 @@ import Arrow from "../../images/arrow.png";
 function HowItWork(){
     return(
         <>
-            <div className="how-it-work-1">
+            
                 <div className="container">
                    <h2 className="text-center sub-head"> How 8080 Works </h2>
                    <p className="text-center col-lg-6 mx-auto"> Once you launch using 8080, our team can work with you on deeper
@@ -17,9 +17,11 @@ function HowItWork(){
                             <p className="col-lg-8"> Leverage our highly optimised environment to
                             launch allowlist, mint, stake or marketplace
                             in minutes</p>
-                            <button className="btn mt-4 comon-buuton"> Get Started
-                               <img src={Arrow} alt="arrow"/>
-                            </button>
+                            <div className="d-none d-lg-block">
+                                 <button className="btn mt-4 comon-buuton"> Get Started
+                                    <img src={Arrow} alt="arrow"/>
+                                 </button>
+                            </div>
                         </div>
                         <div className="col">
                             <ul className="list-unstyled">
@@ -60,12 +62,17 @@ function HowItWork(){
                                  </div>
                                </li>
                             </ul>
+                            <div className="d-block d-lg-none">
+                                 <button className="btn mt-4 comon-buuton"> Get Started
+                                    <img src={Arrow} alt="arrow"/>
+                                 </button>
+                            </div>
                         
                         </div>
                     </div>
                 </div>
                 
-             </div>
+           
         </>
     )
 };

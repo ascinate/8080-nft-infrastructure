@@ -8,8 +8,8 @@ function Banner(){
           <section className="float-start w-100 banner">
              <div className="container">
                  <div className="ban-text text-center">
-                    <h1> <span className="sp-color">  Launch </span> Your 
-                      <span className="d-block"> NFT Infrastructure </span>
+                    <h1> <span className="sp-color">  Launch </span>  Your 
+                      <span className="d-lg-block"> NFT  <span className="d-block d-lg-inline"> Infrastructure </span> </span>
                     </h1>
 
                     <ul className="list-unstyled d-flex align-items-center justify-content-center">
