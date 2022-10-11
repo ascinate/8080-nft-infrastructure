@@ -41,9 +41,9 @@ const AlldataProducts =[
 
      {
         id:3,
-        title:"8080 Marketplace",
-        paraone:"8080 Marketplace enables you to set up a marketplace and sell your merchandise, partner WL spots or any other product under the sun with your token as a currency",
-        paratwo:"The marketplace is gas-free and buyers get a proof-of-ownership NFT",
+        title:"8080 Stake",
+        paraone:"8080 Stake enables you to launch a token with a full-fledged staking interface where you can completely configure yield",
+        paratwo:"Reward multi-token holders and allow your community to lock tokens for extra yield. All this packaged in a beautiful UI that carries your logo and brand",
         feature1:"Powered by your Token",
         feature1dl:"Powered by your ERC-20 token, partner token or ETH",
         feature2:"Add Products via Backend",
@@ -55,6 +55,25 @@ const AlldataProducts =[
         action:"2 ETH/DROP",
         sattus:<ComingSoon/>,
      },
+
+
+     {
+      id:4,
+      title:"8080 Marketplace",
+      paraone:"8080 Marketplace enables you to set up a marketplace and sell your merchandise, partner WL spots or any other product under the sun with your token as a currency",
+      paratwo:"The marketplace is gas-free and buyers get a proof-of-ownership NFT",
+      feature1:"Powered by your Token",
+      feature1dl:"Powered by your ERC-20 token, partner token or ETH",
+      feature2:"Add Products via Backend",
+      feature2dl:"Single upload or bulk upload",
+      feature3:"Seamless Proof- of-ownership",
+      feature3dl:"Buyers get an NFT to prove ownership",
+      feature4:"8080 Ecosystem Edge",
+      feature4dl:"The marketplace integrates with 8080 staking seamlessly",
+      action:"2 ETH/DROP",
+      sattus:<ComingSoon/>,
+    },
+ 
    
 
    
