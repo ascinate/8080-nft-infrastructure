@@ -907,8 +907,10 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .contact-btn{
       margin-top: 25px !important;
-      width: 190px;
+      width: 140px;
       justify-content: center;
+      padding: 6px 10px !important;
+      height: 38px;
      }
      .cre-img{
       width: 80%;
@@ -980,6 +982,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .comingsoon-btn{
       padding: 6px 22px !important;
       font-size: 13px !important;
+      height: 38px;
      }
 
   }
