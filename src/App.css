@@ -719,8 +719,19 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       width: 192px;
     }
     .login-btn{
+      width: 186px;
+      margin: auto;
       margin-top: 20px;
+
     }
+    .navbar-collapse {
+      align-items: center;
+      display: table;
+      flex-basis: inherit;
+      flex-grow: 0;
+      margin: auto;
+      width: 90%;
+  }
     .navbar-toggler:focus{
       box-shadow: none !important;
     }
