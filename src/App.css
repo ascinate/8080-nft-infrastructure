@@ -742,6 +742,12 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     footer p{
       font-size: 14px;
     }
+    .inside-prodcuts1 {
+      padding: 0 20px;
+    }
+    .comon-part1-ps .comon-buuton{
+      margin: 0 !important;
+    }
   }
   @media screen and (max-width:739px) {
   }
@@ -1180,7 +1186,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
 
      .comon-part1-ps {
-      height: 230px;
+      height: auto;
      }
      .col-wallte-btn {
       width: 165px;
