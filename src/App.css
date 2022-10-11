@@ -963,7 +963,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       width: 100%;
      }
      .comon-part1-ps {
-      height: 230px;
+      height: auto;
       padding: 25px;
      }
      .login-btn {
