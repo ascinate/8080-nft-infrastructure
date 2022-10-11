@@ -478,11 +478,19 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   font-family: 'FuturaBold';
   width: 87%;
   line-height: 28px;
+  height: 67px;
 }
+.comon-alow{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
 .comon-alow p{
   width:94%;
   font-size: 15px;
   font-family: 'FuturaMedium';
+
 }
 .lline-div{
   background: transparent linear-gradient(260deg, #4111F900 10%, #4111F9 49%, #4111F900 100%) 0% 0% no-repeat padding-box;
@@ -759,6 +767,9 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     .comon-part1-ps .comon-buuton{
       margin: 0 !important;
     }
+    .comon-alow h5{
+      height: 38px;
+    }
   }
   @media screen and (max-width:739px) {
   }
@@ -949,6 +960,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       width: 100%;
       font-size: 16px;
       line-height: 23px;
+      height: 36px;
      }
      .comon-logo{
       height: 64px;
