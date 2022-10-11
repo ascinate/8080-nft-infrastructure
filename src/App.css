@@ -739,6 +739,9 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     .show-menu1 .close1{
       display: block;
     }
+    footer p{
+      font-size: 14px;
+    }
   }
   @media screen and (max-width:739px) {
   }
@@ -823,7 +826,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     height: 260px;
   }
   .comon-part1-ps .comon-buuton {
-    padding: 4px 24px !important;
+    padding: 4px 19px !important;
     font-size: 12px !important;
     margin: 0 !important;
   }
@@ -953,11 +956,11 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .login-btn {
       margin: 15px auto auto;
-      width: 172px;
+      width: 151px;
      }
      .navbar-collapse .comon-buuton {
       margin-top: 20px !important;
-      width: 172px;
+      width: 151px;
       font-size: 13px;
      }
      .navbar-collapse {
@@ -968,6 +971,17 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       align-items: center;
       flex-basis: inherit;
      }
+     .comon-part1-ps .comingsoon-btn ,
+     .comingsoon-btn{
+      width: 129px;
+      font-size: 13px !important;
+     }
+     .comon-buuton,
+     .comingsoon-btn{
+      padding: 6px 22px !important;
+      font-size: 13px !important;
+     }
+
   }
   @media screen and (max-width: 375px) {
     .navbar-brand img{
@@ -997,12 +1011,15 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       right: -19px;
      }
      .comon-buuton{
-      padding: 6px 25px !important;
+      padding: 6px 15px !important;
       font-size: 13px !important;
+      height: 38px;
+      width: 136px;
      }
      .contact-btn{
-      width: 146px;
-      padding: 6px 25px !important;
+      height: 38px;
+      width: 136px;
+      padding: 6px 15px !important;
       font-size: 13px !important;
       text-align: center;
       justify-content: center;
@@ -1051,6 +1068,10 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .credibility-div p{
       text-align: center;
      }
+     .comon-part1-ps .comingsoon-btn {
+      width: 124px;
+      font-size: 12px !important;
+  }
      .cre-img{
       width: 80%;
       margin: auto;
@@ -1161,13 +1182,16 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .navbar-collapse .comon-buuton {
       margin-top: 20px !important;
-      width: 146px;
+      width: 140px;
       padding: 6px 12px!important;
      }
      .login-btn{
       width: 100px;
       margin: auto;
       margin-top: 15px;
+      font-size: 13px;
+      height: 38px;
+      padding: 6px 65px !important;
      }
      .navbar{
       padding-top: 2px;
@@ -1248,10 +1272,10 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      .comon-buuton{
       padding: 6px 18px !important;
       font-size: 13px !important;
-      width: 138px;
+      width: 132px;
      }
      .credibility-div .contact-btn{
-      width: 138px;
+      width: 132px;
      }
      .banner p{
       margin-bottom: 30px;
@@ -1308,7 +1332,8 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
 
      }
      .navbar-collapse .comon-buuton {
-      width: 149px;
+      width: 134px;
+      padding: 6px 10px!important;
      }
   }
   @media screen and (max-width: 320px) {
