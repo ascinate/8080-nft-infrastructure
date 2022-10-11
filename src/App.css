@@ -935,7 +935,11 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .comon-logo{
       height: 64px;
-      width: 69%;
+      width: 96%;
+     }
+     .comon-logo img {
+      margin: auto;
+      width: 90%;
      }
      .how-it-work-1 .bd-how .sub-head,
      .how-it-work-1 .bd-how .sub-head span{
