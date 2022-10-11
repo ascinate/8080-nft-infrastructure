@@ -1496,7 +1496,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       font-size: 22px;
      }
      .comon-part1-ps {
-      height: 250px;
+      height: auto;
      }
      .navbar-collapse .comon-buuton {
       margin-top: 20px !important;
