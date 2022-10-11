@@ -478,7 +478,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
   font-family: 'FuturaBold';
   width: 87%;
   line-height: 28px;
-  height: 67px;
+  height: 57px;
 }
 .comon-alow{
   position: relative;
@@ -494,7 +494,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
 }
 .lline-div{
   background: transparent linear-gradient(260deg, #4111F900 10%, #4111F9 49%, #4111F900 100%) 0% 0% no-repeat padding-box;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: inline-block;
   width: 79px;
   height: 4px;
