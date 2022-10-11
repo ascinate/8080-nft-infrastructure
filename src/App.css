@@ -1194,7 +1194,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       margin-top: 15px;
       font-size: 13px;
       height: 38px;
-      padding: 64px!important;
+      padding:6px 64px!important;
      }
      .navbar{
       padding-top: 2px;
