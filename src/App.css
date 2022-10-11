@@ -1194,7 +1194,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       margin-top: 15px;
       font-size: 13px;
       height: 38px;
-      padding: 6px 65px !important;
+      padding: 64px!important;
      }
      .navbar{
       padding-top: 2px;
@@ -1490,7 +1490,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .navbar-collapse .comon-buuton {
       margin-top: 20px !important;
-      width: 146px;
+      width: 134px;
       font-size: 13px;
      }
      .login-btn{
