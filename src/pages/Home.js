@@ -11,7 +11,7 @@ function Home(){
     return(
         <>
           <Banner/>
-          <section className="float-start w-100 body-total-part scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+          <section className="float-start w-100 body-total-part scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="100" tabindex="0">
              <div id="howitwork" className="how-it-work-1">
                 <HowItWork/>
              </div>

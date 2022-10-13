@@ -42,7 +42,7 @@ const AlldataProducts =[
      {
         id:3,
         title:"8080 Stake",
-        paraone:"8080 Stake enables you to launch a token with a full-fledged staking interface where you can completely configure yield",
+        paraone:"8080 Stake <br/> enables you to launch a token with a full-fledged staking interface where you can completely configure yield",
         paratwo:"Reward multi-token holders and allow your community to lock tokens for extra yield. All this packaged in a beautiful UI that carries your logo and brand",
         feature1:"Launch your Own Token",
         feature1dl:"Launch ERC-20 utility tokens to engage & reward your community",
@@ -54,8 +54,6 @@ const AlldataProducts =[
         feature4dl:"Easily configure bonuses for multi-token holders and for locks",
         action:"2 ETH/DROP",
         sattus:<ComingSoon/>,
-        type: "Link",
-        linkType: "8080 Stake" 
      },
 
 
