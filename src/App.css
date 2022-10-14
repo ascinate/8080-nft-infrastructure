@@ -1028,6 +1028,10 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     .banner h1, .banner h1 span {
       font-size: 58px;
     }
+    .banner p{
+       width: 73%;
+
+    }
     .banner ul li a {
       font-size: 21px;
     }
@@ -1107,6 +1111,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
      .banner p{
       margin-bottom: 30px;
+      width: 63%;
      }
      .how-it-work-1 h2,
      .how-it-work-1 p{
