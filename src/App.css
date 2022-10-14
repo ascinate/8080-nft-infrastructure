@@ -1019,7 +1019,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
      }
 
   }
-  @media screen and (max-width: 393px) {
+  @media screen and (max-width: 400px) {
     .banner{
       padding-top: 140px;
     overflow: hidden;
@@ -1055,7 +1055,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
     }
     .banner::before {
       left: -51px;
-      top: 201px;
+      top: 155px;
       width: 54%;  
     }
     .banner:after{
@@ -1068,7 +1068,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       width:109px;
      }
      .banner h1, .banner h1 span {
-      font-size: 48px;
+      font-size: 52px;
      }
      .bar1 svg{
       width: 25px;
@@ -1078,7 +1078,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       display: block;
      }
      .banner ul li a {
-      font-size: 19px;
+      font-size: 20px;
      }
      .banner ul li{
       margin: 0 14px;
@@ -1190,12 +1190,12 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
 
      .banner::before{
       left: -48px;
-      top: 98px;
+      top: 162px;
       width: 52%;
      }
      .banner::after {
-      right: 0;
-      top: 64px;
+      right: -40px;
+      top: 101px;
       width: 50%;
      }
      .how-it-work-1 {
@@ -1248,7 +1248,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
       font-size: 12px;
      }
      .banner {
-      padding-top: 129px;
+      padding-top: 119px;
      
      }
 
@@ -1497,15 +1497,15 @@ a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, d
 
      .banner::before {
       left: -39px;
-      top: 83px;
+      top:136px;
       width: 48%;
      }
      .banner{
       padding-top: 112px;
      }
      .banner::after {
-      right: 0;
-      top: 22px;
+      right: -30px;
+      top: 82px;
       width: 50%;
      }
      .banner ul {
